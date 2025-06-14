@@ -12,8 +12,7 @@
         "@astrojs/mdx": "^4.3.0",
         "@astrojs/vue": "^5.1.0",
         "astro": "^5.9.3",
-        "gsap": "^3.13.0",
-        "zod": "^3.25.64"
+        "gsap": "^3.13.0"
       },
       "devDependencies": {
         "@astrojs/tailwind": "^6.0.2",
@@ -1538,6 +1537,15 @@
         "url": "https://opencollective.com/unified"
       }
     },
+    "node_modules/@mdx-js/mdx/node_modules/estree-walker": {
+      "version": "3.0.3",
+      "resolved": "https://registry.npmjs.org/estree-walker/-/estree-walker-3.0.3.tgz",
+      "integrity": "sha512-7RUKfXgSMMkzt6ZuXmqapOurLGPPfgj6l9uRZ7lRGolvk0y2yocc35LdcxKC5PQZdn2DMqioAQ2NoWcrTKmm6g==",
+      "license": "MIT",
+      "dependencies": {
+        "@types/estree": "^1.0.0"
+      }
+    },
     "node_modules/@nodelib/fs.scandir": {
       "version": "2.1.5",
       "resolved": "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz",
@@ -1626,12 +1634,6 @@
           "optional": true
         }
       }
-    },
-    "node_modules/@rollup/pluginutils/node_modules/estree-walker": {
-      "version": "2.0.2",
-      "resolved": "https://registry.npmjs.org/estree-walker/-/estree-walker-2.0.2.tgz",
-      "integrity": "sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==",
-      "license": "MIT"
     },
     "node_modules/@rollup/rollup-android-arm-eabi": {
       "version": "4.43.0",
@@ -2175,12 +2177,6 @@
         "source-map-js": "^1.2.1"
       }
     },
-    "node_modules/@vue/compiler-core/node_modules/estree-walker": {
-      "version": "2.0.2",
-      "resolved": "https://registry.npmjs.org/estree-walker/-/estree-walker-2.0.2.tgz",
-      "integrity": "sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==",
-      "license": "MIT"
-    },
     "node_modules/@vue/compiler-dom": {
       "version": "3.5.16",
       "resolved": "https://registry.npmjs.org/@vue/compiler-dom/-/compiler-dom-3.5.16.tgz",
@@ -2207,12 +2203,6 @@
         "postcss": "^8.5.3",
         "source-map-js": "^1.2.1"
       }
-    },
-    "node_modules/@vue/compiler-sfc/node_modules/estree-walker": {
-      "version": "2.0.2",
-      "resolved": "https://registry.npmjs.org/estree-walker/-/estree-walker-2.0.2.tgz",
-      "integrity": "sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==",
-      "license": "MIT"
     },
     "node_modules/@vue/compiler-ssr": {
       "version": "3.5.16",
@@ -2589,6 +2579,15 @@
         "sharp": "^0.33.3"
       }
     },
+    "node_modules/astro/node_modules/estree-walker": {
+      "version": "3.0.3",
+      "resolved": "https://registry.npmjs.org/estree-walker/-/estree-walker-3.0.3.tgz",
+      "integrity": "sha512-7RUKfXgSMMkzt6ZuXmqapOurLGPPfgj6l9uRZ7lRGolvk0y2yocc35LdcxKC5PQZdn2DMqioAQ2NoWcrTKmm6g==",
+      "license": "MIT",
+      "dependencies": {
+        "@types/estree": "^1.0.0"
+      }
+    },
     "node_modules/astro/node_modules/semver": {
       "version": "7.7.2",
       "resolved": "https://registry.npmjs.org/semver/-/semver-7.7.2.tgz",
@@ -2857,9 +2856,9 @@
       }
     },
     "node_modules/caniuse-lite": {
-      "version": "1.0.30001723",
-      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001723.tgz",
-      "integrity": "sha512-1R/elMjtehrFejxwmexeXAtae5UO9iSyFn6G/I806CYC/BLyyBk1EPhrKBkWhy6wM6Xnm47dSJQec+tLJ39WHw==",
+      "version": "1.0.30001722",
+      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001722.tgz",
+      "integrity": "sha512-DCQHBBZtiK6JVkAGw7drvAMK0Q0POD/xZvEmDp6baiMMP6QXXk9HpD6mNYBZWhOPG6LvIDb82ITqtWjhDckHCA==",
       "funding": [
         {
           "type": "opencollective",
@@ -3539,6 +3538,15 @@
         "url": "https://opencollective.com/unified"
       }
     },
+    "node_modules/estree-util-build-jsx/node_modules/estree-walker": {
+      "version": "3.0.3",
+      "resolved": "https://registry.npmjs.org/estree-walker/-/estree-walker-3.0.3.tgz",
+      "integrity": "sha512-7RUKfXgSMMkzt6ZuXmqapOurLGPPfgj6l9uRZ7lRGolvk0y2yocc35LdcxKC5PQZdn2DMqioAQ2NoWcrTKmm6g==",
+      "license": "MIT",
+      "dependencies": {
+        "@types/estree": "^1.0.0"
+      }
+    },
     "node_modules/estree-util-is-identifier-name": {
       "version": "3.0.0",
       "resolved": "https://registry.npmjs.org/estree-util-is-identifier-name/-/estree-util-is-identifier-name-3.0.0.tgz",
@@ -3593,13 +3601,10 @@
       }
     },
     "node_modules/estree-walker": {
-      "version": "3.0.3",
-      "resolved": "https://registry.npmjs.org/estree-walker/-/estree-walker-3.0.3.tgz",
-      "integrity": "sha512-7RUKfXgSMMkzt6ZuXmqapOurLGPPfgj6l9uRZ7lRGolvk0y2yocc35LdcxKC5PQZdn2DMqioAQ2NoWcrTKmm6g==",
-      "license": "MIT",
-      "dependencies": {
-        "@types/estree": "^1.0.0"
-      }
+      "version": "2.0.2",
+      "resolved": "https://registry.npmjs.org/estree-walker/-/estree-walker-2.0.2.tgz",
+      "integrity": "sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==",
+      "license": "MIT"
     },
     "node_modules/eventemitter3": {
       "version": "5.0.1",
@@ -8375,9 +8380,9 @@
       }
     },
     "node_modules/zod": {
-      "version": "3.25.64",
-      "resolved": "https://registry.npmjs.org/zod/-/zod-3.25.64.tgz",
-      "integrity": "sha512-hbP9FpSZf7pkS7hRVUrOjhwKJNyampPgtXKc3AN6DsWtoHsg2Sb4SQaS4Tcay380zSwd2VPo9G9180emBACp5g==",
+      "version": "3.25.63",
+      "resolved": "https://registry.npmjs.org/zod/-/zod-3.25.63.tgz",
+      "integrity": "sha512-3ttCkqhtpncYXfP0f6dsyabbYV/nEUW+Xlu89jiXbTBifUfjaSqXOG6JnQPLtqt87n7KAmnMqcjay6c0Wq0Vbw==",
       "license": "MIT",
       "funding": {
         "url": "https://github.com/sponsors/colinhacks"

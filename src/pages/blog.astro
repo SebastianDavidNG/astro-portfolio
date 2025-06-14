@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection, type CollectionEntry } from "astro:content";
+
+const posts = await getCollection("blog");
+type BlogPost = CollectionEntry<"blog">;
+---
+
+<BaseLayout>
+  <main class="p-8">
+    <h1 class="text-3xl font-bold mb-4">Blog</h1>
+    <ul class="space-y-4">
+      {
+        posts.map((post: BlogPost) => (
+          <li>
+            <a href={`/blog/${post.slug}`} class="text-xl text-blue-400 hover:underline">
+              {post.data.title}
+            </a>
+            <p class="text-sm text-gray-400">{post.data.date}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </main>
+</BaseLayout>

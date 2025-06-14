@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import DarkToggle from '../components/DarkToggle.vue';
+import ProjectList from '../components/ProjectList.vue';
+
+const allProjects = [
+  { title: 'Portfolio Website', description: 'My personal portfolio built with Astro and Vue.', category: 'Astro' },
+  { title: 'GSAP Animations', description: 'Interactive animations using GSAP.', category: 'GSAP' },
+  { title: 'Vue App', description: 'A small app built with Vue 3.', category: 'Vue' }
+];
+---
+<BaseLayout>
+  <main class="p-8">
+    <DarkToggle />
+    <ProjectList projects={allProjects} />
+  </main>
+</BaseLayout>

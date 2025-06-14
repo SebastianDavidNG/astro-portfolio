@@ -1,0 +1,23 @@
+---
+import "../styles/global.css";
+import MainNav from "../components/Navbar.vue";
+import Hero from '../components/Hero.vue';
+import Knowledge from '../components/KnowledgeSection.vue';
+import Projects from '../components/ProjectsSection.vue';
+import Footer from '../components/Footer.vue';
+---
+
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Sebastian DNG</title>
+  </head>
+  <body class="bg-white text-black dark:bg-gray-900 dark:text-white font-sans">
+    <MainNav />
+    <Hero client:load />
+    <Knowledge client:load />
+    <Projects client:load />
+    <Footer />
+  </body>
+</html>
