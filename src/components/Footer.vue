@@ -4,17 +4,18 @@
 
       <!-- Enlaces -->
       <div>
-        <h3 class="text-lg font-semibold mb-4 text-white">Enlaces</h3>
+        <h3 class="text-lg font-semibold mb-4 text-white">Links</h3>
         <ul class="space-y-2 text-sm">
-          <li><a href="/" class="hover:underline">Inicio</a></li>
-          <li><a href="/projects" class="hover:underline">Proyectos</a></li>
-          <li><a href="#contacto" class="hover:underline">Contacto</a></li>
+          <li><a href="#hero" class="hover:underline">Home</a></li>
+          <li><a href="#knowledge" class="hover:underline">Skills</a></li>
+          <li><a href="#projects" class="hover:underline">Projects</a></li>
+          <li><a href="#contact" class="hover:underline">Contact</a></li>
         </ul>
       </div>
 
       <!-- Social -->
       <div>
-        <h3 class="text-lg font-semibold mb-4 text-white">Social</h3>
+        <h3 class="text-lg font-semibold mb-4 text-white">Social Links</h3>
         <ul class="flex gap-4 items-center">
           <!-- GitHub -->
           <li>
@@ -65,7 +66,7 @@
       <!-- Copyright -->
       <div class="md:text-right text-sm text-green-300">
         <p>© {{ new Date().getFullYear() }} Sebastián Niño</p>
-        <p>Todos los derechos reservados.</p>
+        <p>All rights reserved.</p>
       </div>
     </div>
   </footer>

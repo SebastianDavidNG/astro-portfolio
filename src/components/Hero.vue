@@ -1,5 +1,5 @@
 <template>
-  <section class="relative bg-black text-white h-screen flex items-center justify-center overflow-hidden">
+  <section id="hero" class="relative bg-black text-white h-screen flex items-center justify-center overflow-hidden">
     <!-- Background: Matrix + Particles -->
     <div class="absolute inset-0 z-0 pointer-events-none">
       <canvas id="code-bg" class="w-full h-full"></canvas>

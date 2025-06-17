@@ -4,6 +4,7 @@ import MainNav from "../components/Navbar.vue";
 import Hero from '../components/Hero.vue';
 import Knowledge from '../components/KnowledgeSection.vue';
 import Projects from '../components/ProjectsSection.vue';
+import Contact from '../components/ContactSection.vue';
 import Footer from '../components/Footer.vue';
 ---
 
@@ -13,11 +14,13 @@ import Footer from '../components/Footer.vue';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Sebastian DNG</title>
   </head>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <body class="bg-white text-black dark:bg-gray-900 dark:text-white font-sans">
     <MainNav />
     <Hero client:load />
     <Knowledge client:load />
     <Projects client:load />
+    <Contact />
     <Footer />
   </body>
 </html>
