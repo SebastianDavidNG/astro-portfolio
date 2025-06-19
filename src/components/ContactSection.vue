@@ -1,10 +1,10 @@
 <template>
-  <section id="contact" class="py-20 bg-black text-white relative z-10">
+  <section id="contact" class="py-20 bg-white text-white relative z-10 dark:bg-black dark:text-black">
     <div class="max-w-4xl mx-auto px-4 text-center">
-      <h2 class="text-4xl md:text-5xl font-bold mb-8 animate-fadeInUp">
-        <span class="text-green-400">Get in</span> Touch
+      <h2 class="text-4xl md:text-5xl font-bold mb-8 animate-fadeInUp text-black dark:text-white">
+        <span class="text-green-400 black:text-green-400">Get in</span> Touch
       </h2>
-      <p class="text-lg text-gray-300 mb-12 animate-fadeInUp delay-200">
+      <p class="text-lg text-black mb-12 animate-fadeInUp delay-200 dark:text-gray-300">
         Have a project in mind, a question, or just want to say hello? Drop me a message.
       </p>
 

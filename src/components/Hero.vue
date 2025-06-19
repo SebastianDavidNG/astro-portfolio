@@ -1,5 +1,5 @@
 <template>
-  <section id="hero" class="relative bg-black text-white h-screen flex items-center justify-center overflow-hidden">
+  <section id="hero" class="relative bg-black text-white h-screen flex items-center justify-center overflow-hidden pt-24 ">
     <!-- Background: Matrix + Particles -->
     <div class="absolute inset-0 z-0 pointer-events-none">
       <canvas id="code-bg" class="w-full h-full"></canvas>
@@ -8,20 +8,20 @@
 
     <!-- Foreground Content -->
     <div class="relative z-10 max-w-4xl mx-auto text-center px-6">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">
-        Hello, I'm <span class="text-green-400">Sebastián Niño</span>
+      <h1 class="text-4xl md:text-6xl font-bold mb-4 dark:text-green-400">
+        Hello, I'm <span class="text-green-400 dark:text-white">Sebastián Niño</span>
       </h1>
-      <p class="text-xl md:text-2xl text-green-300 h-10 mb-2">
+      <p class="text-xl md:text-2xl text-green-300 h-10 mb-2 dark:text-white">
         <span ref="typewriter" class="inline-block whitespace-nowrap"></span><span class="animate-pulse">|</span>
       </p>
-      <p class="text-sm md:text-base text-white italic animate-fadeIn mb-6">
+      <p class="text-sm md:text-base text-white italic animate-fadeIn mb-6 dark:text-green-400">
         Graphic Designer and Publisher, focus on Web Development
       </p>
       <div ref="ctaButtons" class="flex justify-center gap-4 opacity-0">
-        <a href="#projects" class="px-6 py-3 bg-green-400 text-black font-semibold rounded-full hover:bg-green-300 hover:scale-105 transform transition duration-300">
+        <a href="#projects" class="px-6 py-3 bg-green-400 text-black font-semibold rounded-full hover:bg-green-300 hover:scale-105 transform transition duration-300 dark:text-black dark:bg-white dark:hover:bg-green-500">
           View Projects
         </a>
-        <a href="#contact" class="px-6 py-3 border border-green-400 text-green-400 rounded-full hover:bg-green-400 hover:text-black hover:scale-105 transform transition duration-300">
+        <a href="#contact" class="px-6 py-3 border border-green-400 text-green-400 rounded-full hover:bg-green-400 hover:text-black hover:scale-105 transform transition duration-300 dark:border-white dark:text-white dark:hover:bg-green-500">
           Contact Me
         </a>
       </div>

@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Opcional: transiciones suaves para dark mode */
 html {
   scroll-behavior: smooth;
-  transition: background 0.3s ease, color 0.3s ease;
 }
 
 body {
-  @apply bg-white text-black dark:bg-gray-900 dark:text-white;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .social-icon {

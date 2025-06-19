@@ -1,31 +1,46 @@
 <template>
-  <button @click="toggle" class="p-2 rounded bg-gray-700 text-white dark:bg-yellow-400 dark:text-black">
-    {{ isDark ? '☀️ Light Mode' : '🌙 Dark Mode' }}
+  <button
+    @click="toggleDarkMode"
+    class="p-2 rounded-full bg-gray-700 dark:bg-yellow-400 text-white dark:text-black transition-colors duration-300"
+    aria-label="Toggle Dark Mode"
+  >
+    <span v-if="isDark">☀️</span>
+    <span v-else>🌙</span>
   </button>
 </template>
 
 <script setup>
-import { ref, onMounted, watch } from 'vue';
+import { ref, onMounted } from 'vue';
+
 const isDark = ref(false);
 
-const applyTheme = () => {
-  if (isDark.value) {
-    document.documentElement.classList.add('dark');
+// Aplica modo oscuro/claro
+const applyTheme = (dark) => {
+  isDark.value = dark;
+  const html = document.documentElement;
+
+  if (dark) {
+    html.classList.add('dark');
     localStorage.setItem('theme', 'dark');
   } else {
-    document.documentElement.classList.remove('dark');
+    html.classList.remove('dark');
     localStorage.setItem('theme', 'light');
   }
 };
 
-const toggle = () => {
-  isDark.value = !isDark.value;
-  applyTheme();
+const toggleDarkMode = () => {
+  applyTheme(!isDark.value);
 };
 
+// Detectar tema actual al montar
 onMounted(() => {
   const savedTheme = localStorage.getItem('theme');
-  isDark.value = savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches);
-  applyTheme();
+  if (savedTheme) {
+    applyTheme(savedTheme === 'dark');
+  } else {
+    // Opción: usar preferencia del sistema si no hay guardado
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    applyTheme(prefersDark);
+  }
 });
 </script>
