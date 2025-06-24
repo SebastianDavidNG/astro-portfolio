@@ -15,9 +15,10 @@
       <!-- Hamburger Menu -->
       <button
         @click="isOpen = !isOpen"
-        class="md:hidden text-white text-2xl focus:outline-none"
+        class="md:hidden text-white text-2xl focus:outline-none focus:ring-2 focus:ring-green-400"
         aria-label="Toggle navigation"
-      >
+        :aria-expanded="isOpen.toString()"
+        >
         <span v-if="!isOpen">☰</span>
         <span v-else>✕</span>
       </button>

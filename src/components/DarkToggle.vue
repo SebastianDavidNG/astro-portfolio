@@ -2,11 +2,13 @@
   <button
     @click="toggleDarkMode"
     class="p-2 rounded-full bg-gray-700 dark:bg-yellow-400 text-white dark:text-black transition-colors duration-300"
-    aria-label="Toggle Dark Mode"
+    aria-label="Toggle dark mode"
+    :aria-pressed="isDark.toString()"
   >
     <span v-if="isDark">☀️</span>
     <span v-else>🌙</span>
   </button>
+
 </template>
 
 <script setup>

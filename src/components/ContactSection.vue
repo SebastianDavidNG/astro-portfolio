@@ -68,6 +68,39 @@ import { ref } from 'vue';
 
 const recaptchaSiteKey = '6LedWGQrAAAAACL3VePRG0e1IQ2gCskvS_JcsroE';
 
+import { onMounted } from 'vue';
+
+const recaptchaLoaded = ref(false);
+
+function loadRecaptcha() {
+  if (recaptchaLoaded.value) return;
+  const script = document.createElement('script');
+  script.src = 'https://www.google.com/recaptcha/api.js';
+  script.async = true;
+  script.defer = true;
+  script.onload = () => {
+    recaptchaLoaded.value = true;
+    grecaptcha.render(document.querySelector('.g-recaptcha'), {
+      sitekey: recaptchaSiteKey,
+    });
+  };
+  document.head.appendChild(script);
+}
+
+onMounted(() => {
+  if (typeof window !== 'undefined') {
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        loadRecaptcha();
+        observer.disconnect();
+      }
+    }, { threshold: 0.5 });
+
+    observer.observe(document.querySelector('#contact'));
+  }
+});
+
+
 const form = ref({
   name: '',
   email: '',

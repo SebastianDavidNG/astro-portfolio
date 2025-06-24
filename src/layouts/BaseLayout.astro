@@ -15,14 +15,14 @@ import Footer from '../components/Footer.vue';
     <link rel="icon" type="image/png" href="/favicon.png" />
     <title>Sebastián Niño | Front-End Developer | Web Developer | SEO | Wordpress | Drupal | Astro | Tailwind CSS | Vue</title>
     <meta name="description" content="Sebastián Niño is a Front-End Developer specializing in Vue.js, Astro, and Tailwind CSS, with strong expertise in WordPress, Drupal, UI/UX design, and technical SEO." />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   </head>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <body class="bg-white text-black dark:bg-gray-900 dark:text-white font-sans">
     <MainNav client:load />
     <Hero client:load />
     <Knowledge client:load />
-    <Projects client:load />
-    <Contact />
-    <Footer />
+    <Projects client:visible />
+    <Contact client:visible />
+    <Footer client:visible />
   </body>
 </html>

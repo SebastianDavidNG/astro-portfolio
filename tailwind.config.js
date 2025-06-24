@@ -2,10 +2,12 @@
 export default {
   darkMode: 'class',
   content: [
-    './src/**/*.{html,js,vue,astro}',
+    './src/**/*.{astro,html,js,jsx,ts,tsx,vue}',
+    './components/**/*.{astro,html,js,jsx,ts,tsx,vue}',
+    './layouts/**/*.{astro,html,js,jsx,ts,tsx,vue}',
   ],
   theme: {
     extend: {},
   },
   plugins: [],
-}
+};

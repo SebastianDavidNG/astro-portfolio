@@ -20,12 +20,26 @@
                 <div v-for="(project, index) in filteredProjects" :key="project.title"
                     class="relative group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
                     <picture>
-                        <source :srcset="project.image.replace('.jpg', '.webp')" type="image/webp" />
-                        <img :src="project.image" :alt="project.title" loading="lazy"
-                            class="w-full h-64 object-cover" />
+                        <source
+                            :srcset="`
+                                ${project.image.replace('.jpg', '-640.webp')} 640w,
+                                ${project.image.replace('.jpg', '-1024.webp')} 1024w,
+                                ${project.image.replace('.jpg', '.webp')} 1920w
+                            `"
+                            type="image/webp"
+                        />
+                            <img
+                                :src="project.image"
+                                :alt="project.title"
+                                loading="lazy"
+                                decoding="async"
+                                sizes="(max-width: 768px) 100vw, 33vw"
+                                class="w-full h-64 object-cover"
+                            />
                     </picture>
 
-                    <div class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-4">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-4">
                         <h3 class="text-2xl font-semibold text-green-400 mb-2 animate-fade-in-up">{{ project.title }}
                         </h3>
                         <p class="text-sm text-gray-300 mb-4 animate-fade-in-up delay-100">{{ project.description }}</p>
