@@ -6,7 +6,7 @@
     <!-- Background: Matrix + Particles -->
     <div class="absolute inset-0 z-0 pointer-events-none">
       <canvas id="code-bg" class="w-full h-full"></canvas>
-      <div id="particles-js" class="absolute inset-0"></div>
+      <!-- <div id="particles-js" class="absolute inset-0"></div> -->
     </div>
 
     <!-- Foreground Content -->
@@ -66,6 +66,7 @@ import lottie from 'lottie-web';
 const typewriter = ref(null);
 const ctaButtons = ref(null);
 const lottieBtn = ref(null);
+
 
 const skills = [
   'Front-End Developer',
