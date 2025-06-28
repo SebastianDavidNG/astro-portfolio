@@ -45,3 +45,13 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## 📄 License
+
+This project is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/).
+
+You may use this code as a learning reference or adapt it for your own personal projects.  
+**Commercial usage or redistribution is not permitted without explicit permission.**
+
+© 2025 Sebastián Niño
+
